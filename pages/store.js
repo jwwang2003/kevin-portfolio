@@ -1,10 +1,10 @@
 import Skeleton from '../components/Skeleton'
 
-export default function Portfolio() {
+export default function Store() {
   return (
     <>
       <Skeleton>
-        <h1>This is the portfolio</h1>
+        <h1>This is the store</h1>
       </Skeleton>
     </>
   )

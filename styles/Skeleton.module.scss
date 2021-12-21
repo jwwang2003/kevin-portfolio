@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  margin: 0.5rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0.5rem;
+  border: 1px solid rgb(218,199,188, 0.25);
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  background-color: rgba(225, 225, 222, 0.3);
+  color: rgb(65,65,65);
+}
+
+.header > nav > a {
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header > nav > a + a {
+  margin-left: 1.25rem;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: rgb(218,199,188);
+  filter: opacity(0.73);
+}
+
+@mixin float() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.mask {
+  @include float();
+  z-index: 2;
+}
+
+.popout {
+  @include float();
+  z-index: 3;
+}

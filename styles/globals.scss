@@ -8,6 +8,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
+.navigation-underline {
+  width: auto;
+  border: 1px solid yellowgreen;
+}
+
+.test {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
