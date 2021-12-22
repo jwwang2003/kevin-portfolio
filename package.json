@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "cross-env ANALYZE=true next build",
+    "build:static": "cross-env ANALYZE=true next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
