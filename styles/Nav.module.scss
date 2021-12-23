@@ -1,0 +1,11 @@
+.nav > a {
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: 0.15s ease;
+}
+
+.nav > a + a {
+  margin-left: 1rem;
+}
+
