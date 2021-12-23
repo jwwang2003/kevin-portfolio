@@ -1,0 +1,48 @@
+@mixin common() {
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 30/9;
+  top: 0;
+}
+
+.header {
+  @include common();
+  background: url("/images/maskedHeader/image.jpg") center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    aspect-ratio: 16/9;
+  }
+}
+
+.header > h1 {
+  @include common();
+  mask: url("/images/maskedHeader/mask.png");
+  -webkit-mask: url("/images/maskedHeader/mask.png") center no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  color: #fff;
+  margin: 0;
+  font-size: 100px;
+  letter-spacing: -0.03em;
+  position: relative;
+  font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+  .header > h1 {
+    aspect-ratio: 16/9;
+  }
+}
+
+.header > h1 > span {
+  position: fixed;
+  display: inline-block;
+  text-align: center;
+  transition: margin 1s ease-in-out;
+  font-family: 'Libre Baskerville', serif;
+  width: 100vw;
+  font-style: italic;
+}
