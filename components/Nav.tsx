@@ -50,7 +50,7 @@ function Nav (): JSX.Element {
       {routes.map(({ name, href }) => <Link key={href} href={href} locale={locale} passHref>
         <a>{name}</a>
       </Link>)}
-      <Link href={asPath} locale={locale === 'zh-CN' ? 'en-US' : 'zh-CN'}>{locale === 'zh-CN' ? t('EN') : t('CN')}</Link>
+      <Link href={asPath} locale={locale === 'zh-CN' ? 'en-US' : 'zh-CN'}><a>{locale === 'zh-CN' ? t('EN') : t('CN')}</a></Link>
     </div>
   </nav>)
 }
