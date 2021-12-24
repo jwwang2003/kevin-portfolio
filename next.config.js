@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const { i18n } = require('./next-i18next.config')
 module.exports = {
   reactStrictMode: true,
   webpack: (config, { dev, isServer }) => {
@@ -7,10 +8,10 @@ module.exports = {
       Object.assign(config.resolve.alias, {
         react: 'preact/compat',
         'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat',
-      });
+        'react-dom': 'preact/compat'
+      })
     }
-
-    return config;
+    return config
   },
+  i18n
 }

@@ -2,18 +2,14 @@ import 'normalize.css'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { AnimatePresence } from 'framer-motion'
+import { appWithTranslation } from 'next-i18next'
 
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-
-function MyApp({ Component, pageProps, router }: AppProps) {
-  return <>
-    <Nav />
+function MyApp ({ Component, pageProps, router }: AppProps) {
+  return (
     <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} key={router.route}/>
+      <Component {...pageProps} key={router.route} />
     </AnimatePresence>
-    <Footer />
-  </>
-}
+  )
+};
 
-export default MyApp
+export default appWithTranslation(MyApp)

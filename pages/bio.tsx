@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Skeleton from '../components/Skeleton'
+import applyInternationalization from '../utils/applyInternationalization'
 
 const Bio: NextPage = () => {
   return (
@@ -7,6 +8,14 @@ const Bio: NextPage = () => {
 
     </Skeleton>
   )
+}
+
+export async function getStaticProps ({ locale }:{ locale: string }) {
+  return {
+    props: {
+      ...(await applyInternationalization({ locale: locale, namespaces: ['bio'] }))
+    }
+  }
 }
 
 export default Bio
