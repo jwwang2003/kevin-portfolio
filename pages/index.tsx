@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import applyInternationalization from '../utils/applyInternationalization'
-import Gallery from 'react-photo-gallery'
+import Gallery from '../utils/react-photo-gallery.umd'
 import Skeleton from '../components/Skeleton'
 
 interface Test {
