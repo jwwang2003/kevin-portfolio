@@ -5,7 +5,7 @@ import applyInternationalization from '../utils/applyInternationalization'
 const Store: NextPage = () => {
   return (
     <Skeleton title="This is the home page" description="This is the description">
-      <div className="flex flex-row justify-center flex-wrap gap-4 py-4 pt-4 pb-20">
+      <div className="flex flex-row justify-center flex-wrap gap-4 p-4">
         {/* {[...Array(25)].map((x, i) =>
           <Test />
         )} */}

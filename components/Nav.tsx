@@ -15,10 +15,6 @@ function Nav (): JSX.Element {
       href: '/'
     },
     {
-      name: t('Portfolio'),
-      href: '/portfolio'
-    },
-    {
       name: t('Bio'),
       href: '/bio'
     },

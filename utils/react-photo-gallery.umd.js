@@ -241,7 +241,7 @@
       }, 0);
       photo.top = colCurrTopPositions[smallestCol];
       photo.left = colLeftPositions[smallestCol];
-      colCurrTopPositions[smallestCol] = colCurrTopPositions[smallestCol] + photo.height + margin * 2; // store the tallest col to use for gallery height because of abs positioned elements
+      colCurrTopPositions[smallestCol] = Math.floor(colCurrTopPositions[smallestCol] + photo.height + margin * 2); // store the tallest col to use for gallery height because of abs positioned elements
 
       var tallestCol = colCurrTopPositions.reduce(function (acc, item, i) {
         acc = item > colCurrTopPositions[acc] ? i : acc;

@@ -28,7 +28,9 @@ function Skeleton ({ children, title, description }: Props): JSX.Element {
         variants={animationVariants}
         transition={{ type: 'linear' }}
       > */}
+      <div className="pb-20">
         {children}
+      </div>
       {/* </motion.main> */}
       <Footer />
     </>

@@ -12,7 +12,7 @@ interface Test {
 const Home: NextPage<{images: Test[] }> = ({ images }: { images: Test[] }) => {
   return (
     <Skeleton title="This is the home page" description="This is the description">
-      <Gallery direction={'column'} photos={images} />;
+      <Gallery direction={'column'} photos={images} />
     </Skeleton>
   )
 }
