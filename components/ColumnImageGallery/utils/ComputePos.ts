@@ -1,4 +1,4 @@
-import { round } from './Round'
+// import { round } from './Round'
 import { MainProps, Thumbnail } from '../types'
 
 interface Props extends MainProps {
@@ -13,7 +13,7 @@ export default function ComputePos ({ images, columns, WIDTH, LEFTOVER } : Props
   for (const { src, height, width } of images) {
     thumbnails.push({
       src: src,
-      height: round(height / width * WIDTH, 0),
+      height: Math.floor(height / width * WIDTH),
       width: WIDTH,
       top: 0,
       left: 0
