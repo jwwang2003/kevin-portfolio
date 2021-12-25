@@ -26,6 +26,8 @@
     "rules": {
         "no-use-before-define": "off",
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }] //should add ".ts" if typescript project
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], //should add ".ts" if typescript project
+        // other rules
+        "@next/next/no-img-element": "off"
     }
 }

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import applyInternationalization from '../utils/applyInternationalization'
-import Gallery from '../utils/react-photo-gallery.umd'
+import Gallery from '../components/ColumnImageGallery'
 import Skeleton from '../components/Skeleton'
 
 interface Test {
@@ -12,7 +12,7 @@ interface Test {
 const Home: NextPage<{images: Test[] }> = ({ images }: { images: Test[] }) => {
   return (
     <Skeleton title="This is the home page" description="This is the description">
-      <Gallery direction={'column'} photos={images} />
+      <Gallery images={images} />
     </Skeleton>
   )
 }
