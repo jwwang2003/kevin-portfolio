@@ -1,0 +1,17 @@
+.container {
+  @apply absolute overflow-hidden select-none;
+}
+
+.container > * {
+  @apply transition-all duration-150
+}
+
+.cover {
+  @apply absolute text-white opacity-0 grid place-items-center;
+}
+
+.container:hover .cover {
+  @apply opacity-100;
+  background-color: rgb(0,0,0,0.75)
+}
+
