@@ -16,7 +16,7 @@ const Photo = ({ index, src, top, left, height, width } : Thumbnail): JSX.Elemen
   }}>
       <div className={`${styles.cover}`} style={{ height, width }}>
         <span className="text-center">
-          <h1 className="text-4xl">Subtitle</h1>
+          <h1 className="text-4xl font-thin">Subtitle</h1>
           <h3 className="font-light">— View —</h3>
         </span>
       </div>

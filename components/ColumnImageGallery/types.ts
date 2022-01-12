@@ -15,7 +15,7 @@ export interface Image {
 
 export interface Thumbnail extends Image{
   // positioning
-  index: string,
+  index: number,
   top: number,
   left: number
 }
